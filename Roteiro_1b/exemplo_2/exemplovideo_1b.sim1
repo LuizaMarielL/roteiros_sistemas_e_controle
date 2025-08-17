@@ -1,0 +1,93 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-1" mainComp="false" Show_id="false" Show_Val="false" Pos="-216,-92" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-1" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="true" />
+
+<item itemtype="Resistor" CircId="Resistor-2" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-100,-92" rotation="0" hflip="1" vflip="1" label="Resistor-2" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Led" CircId="Led-3" mainComp="false" Show_id="false" Show_Val="false" Pos="-60,-40" rotation="90" hflip="1" vflip="1" label="Led-3" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Ground" CircId="Ground-4" mainComp="false" Show_id="false" Show_Val="false" Pos="-60,16" rotation="0" hflip="1" vflip="1" label="Ground-4" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Switch" CircId="Switch-6" mainComp="false" Show_id="false" Show_Val="false" Pos="-156,-92" rotation="0" hflip="1" vflip="1" label="Switch-6" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1" />
+
+<item itemtype="Probe" CircId="Probe-8" mainComp="false" Show_id="false" Show_Val="true" Pos="-112,-152" rotation="-45" hflip="1" vflip="1" label="Probe-8" idLabPos="16,-16" labelrot="45" valLabPos="16,0" valLabRot="45" ShowVolt="true" Threshold="2.5 V" />
+
+<item itemtype="Probe" CircId="Probe-11" mainComp="false" Show_id="false" Show_Val="true" Pos="-44,-156" rotation="-45" hflip="1" vflip="1" label="Probe-11" idLabPos="16,-16" labelrot="45" valLabPos="16,0" valLabRot="45" ShowVolt="true" Threshold="2.5 V" />
+
+<item itemtype="WaveGen" CircId="WaveGen-13" mainComp="false" ShowProp="Semi_Ampli" Show_id="false" Show_Val="true" Pos="84,-96" rotation="0" hflip="1" vflip="1" label="WaveGen-13" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Running="true" Wave_Type="Sine" Freq="10000 Hz" Phase="0 _º" Steps="100 _Steps" Duty="50 _%" Always_On="false" Bipolar="false" Floating="false" Semi_Ampli="2.5 V" Mid_Volt="0 V" />
+
+<item itemtype="Resistor" CircId="Resistor-17" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="140,-64" rotation="-270" hflip="1" vflip="1" label="Resistor-17" idLabPos="-16,-24" labelrot="0" valLabPos="-9.99406,6" valLabRot="0" Resistance="10 Ω" />
+
+<item itemtype="Amperimeter" CircId="Amperimeter-18" mainComp="false" Show_id="false" Show_Val="false" Pos="172,16" rotation="0" hflip="1" vflip="1" label="Amperimeter-18" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Capacitor" CircId="Capacitor-19" mainComp="false" ShowProp="Capacitance" Show_id="false" Show_Val="true" Pos="180,64" rotation="90" hflip="1" vflip="1" label="Capacitor-19" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Capacitance="50 µF" Resistance="1 µΩ" InitVolt="0 V" ReaStep="0 ns" />
+
+<item itemtype="Ground" CircId="Ground-20" mainComp="false" Show_id="false" Show_Val="false" Pos="184,132" rotation="0" hflip="1" vflip="1" label="Ground-20" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Oscope" CircId="Oscope-21" mainComp="false" Show_id="false" Show_Val="false" Pos="372,4" rotation="0" hflip="1" vflip="1" label="Oscope-21" idLabPos="-90,-100" labelrot="0" valLabPos="-16,20" valLabRot="0" Basic_X="135 _px" Basic_Y="135 _px" BufferSize="600000" connectGnd="true" InputImped="10 MΩ" TimDiv="20000000" TimPos="0,-3826015529,-3826015529,-3826015529," VolDiv="0.03258,1,1,1," Tunnels=",,,," Trigger="4" Filter="0.1 V" AutoSC="4" Tracks="1" HideCh="false,false,false,false," VolPos="4.44089e-16,0,0,0," />
+
+<item itemtype="Voltimeter" CircId="Voltimeter-24" mainComp="false" Show_id="false" Show_Val="false" Pos="224,-104" rotation="0" hflip="1" vflip="1" label="Voltimeter-24" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Probe" CircId="Probe-28" mainComp="false" Show_id="false" Show_Val="true" Pos="188,-72" rotation="-45" hflip="1" vflip="1" label="Probe-28" idLabPos="16,-16" labelrot="45" valLabPos="16,0" valLabRot="45" ShowVolt="true" Threshold="2.5 V" />
+
+<item itemtype="FreqMeter" CircId="FreqMeter-30" mainComp="false" Show_id="false" Show_Val="false" Pos="248,0" rotation="90" hflip="1" vflip="1" label="FreqMeter-30" idLabPos="-32,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Filter="0.1 V" />
+
+<item itemtype="Node" CircId="Node-10" mainComp="false" Pos="-128,-92" />
+
+<item itemtype="Node" CircId="Node-12" mainComp="false" Pos="-60,-92" />
+
+<item itemtype="Node" CircId="Node-26" mainComp="false" Pos="140,-28" />
+
+<item itemtype="Node" CircId="Node-27" mainComp="false" Pos="184,96" />
+
+<item itemtype="Node" CircId="Node-29" mainComp="false" Pos="172,-28" />
+
+<item itemtype="Node" CircId="Node-31" mainComp="false" Pos="216,-48" />
+
+<item itemtype="Node" CircId="Node-32" mainComp="false" Pos="216,-60" />
+
+<item itemtype="Connector" uid="Connector-3" startpinid="Led-3-rPin" endpinid="Ground-4-Gnd" pointList="-60,-24,-60,0" />
+
+<item itemtype="Connector" uid="Connector-8" startpinid="Fixed Voltage-1-outnod" endpinid="Switch-6-pinP0" pointList="-200,-92,-172,-92" />
+
+<item itemtype="Connector" uid="Connector-13" startpinid="Probe-8-inpin" endpinid="Node-10-1" pointList="-128,-136,-128,-92" />
+
+<item itemtype="Connector" uid="Connector-14" startpinid="Switch-6-switch0pinN" endpinid="Node-10-0" pointList="-140,-92,-128,-92" />
+
+<item itemtype="Connector" uid="Connector-15" startpinid="Node-10-2" endpinid="Resistor-2-lPin" pointList="-128,-92,-116,-92" />
+
+<item itemtype="Connector" uid="Connector-16" startpinid="Probe-11-inpin" endpinid="Node-12-1" pointList="-60,-140,-60,-92" />
+
+<item itemtype="Connector" uid="Connector-17" startpinid="Resistor-2-rPin" endpinid="Node-12-0" pointList="-84,-92,-60,-92" />
+
+<item itemtype="Connector" uid="Connector-18" startpinid="Node-12-2" endpinid="Led-3-lPin" pointList="-60,-92,-60,-56" />
+
+<item itemtype="Connector" uid="Connector-19" startpinid="WaveGen-13-outnod" endpinid="Resistor-17-lPin" pointList="100,-96,140,-96,140,-80" />
+
+<item itemtype="Connector" uid="Connector-22" startpinid="Amperimeter-18-rPin" endpinid="Capacitor-19-lPin" pointList="180,32,180,48" />
+
+<item itemtype="Connector" uid="Connector-32" startpinid="Resistor-17-rPin" endpinid="Node-26-0" pointList="140,-48,140,-28" />
+
+<item itemtype="Connector" uid="Connector-33" startpinid="Node-26-2" endpinid="Amperimeter-18-lPin" pointList="140,-28,140,32,164,32" />
+
+<item itemtype="Connector" uid="Connector-34" startpinid="Voltimeter-24-rPin" endpinid="Node-27-1" pointList="232,-88,536,-88,536,96,184,96" />
+
+<item itemtype="Connector" uid="Connector-35" startpinid="Capacitor-19-rPin" endpinid="Node-27-0" pointList="180,80,180,96,184,96" />
+
+<item itemtype="Connector" uid="Connector-36" startpinid="Node-27-2" endpinid="Ground-20-Gnd" pointList="184,96,184,116" />
+
+<item itemtype="Connector" uid="Connector-37" startpinid="Probe-28-inpin" endpinid="Node-29-1" pointList="172,-56,172,-28" />
+
+<item itemtype="Connector" uid="Connector-39" startpinid="Node-29-2" endpinid="Node-26-1" pointList="172,-28,140,-28" />
+
+<item itemtype="Connector" uid="Connector-40" startpinid="FreqMeter-30-lPin" endpinid="Node-31-1" pointList="248,-40,248,-48,216,-48" />
+
+<item itemtype="Connector" uid="Connector-42" startpinid="Node-31-2" endpinid="Node-29-0" pointList="216,-48,216,-28,172,-28" />
+
+<item itemtype="Connector" uid="Connector-43" startpinid="Oscope-21-Pin0" endpinid="Node-32-1" pointList="284,-44,284,-60,216,-60" />
+
+<item itemtype="Connector" uid="Connector-44" startpinid="Voltimeter-24-lPin" endpinid="Node-32-0" pointList="216,-88,216,-60" />
+
+<item itemtype="Connector" uid="Connector-45" startpinid="Node-32-2" endpinid="Node-31-0" pointList="216,-60,216,-48" />
+
+</circuit>
