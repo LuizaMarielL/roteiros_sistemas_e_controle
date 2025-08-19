@@ -1,0 +1,41 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="opAmp" CircId="opAmp-1" mainComp="false" Show_id="false" Show_Val="false" Pos="-68,-84" rotation="0" hflip="1" vflip="-1" label="opAmp-1" idLabPos="-16,-32" labelrot="0" valLabPos="-16,20" valLabRot="0" Gain="400000" Out_Imped="1e-14 Ω" Power_Pins="false" Switch_Pins="false" Volt_Pos="12 V" Volt_Neg="-12 V" />
+
+<item itemtype="Resistor" CircId="Resistor-3" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-112,-48" rotation="0" hflip="1" vflip="1" label="Resistor-3" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="33 kΩ" />
+
+<item itemtype="Resistor" CircId="Resistor-4" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-140,-12" rotation="90" hflip="1" vflip="1" label="Resistor-4" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="10 kΩ" />
+
+<item itemtype="Ground" CircId="Ground-9" mainComp="false" Show_id="false" Show_Val="false" Pos="-140,40" rotation="0" hflip="1" vflip="1" label="Ground-9" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Oscope" CircId="Oscope-12" mainComp="false" Show_id="false" Show_Val="false" Pos="96,-36" rotation="0" hflip="1" vflip="1" label="Oscope-12" idLabPos="-90,-100" labelrot="0" valLabPos="-16,20" valLabRot="0" Basic_X="135 _px" Basic_Y="135 _px" BufferSize="600000" connectGnd="true" InputImped="10 MΩ" TimDiv="6276041657" TimPos="-1959629767296,-1959629767296,-1959629767296,-1959629767296," VolDiv="5,5,5,5," Tunnels=",,,," Trigger="4" Filter="0.1 V" AutoSC="4" Tracks="1" HideCh="false,false,false,false," VolPos="0,0,0,0," />
+
+<item itemtype="WaveGen" CircId="WaveGen-18" mainComp="false" Show_id="false" Show_Val="false" Pos="-188,-92" rotation="0" hflip="1" vflip="1" label="WaveGen-18" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Running="true" Wave_Type="Sine" Freq="100 Hz" Phase="0 _º" Steps="100 _Steps" Duty="50 _%" Always_On="false" Bipolar="false" Floating="false" Semi_Ampli="5 V" Mid_Volt="0 V" />
+
+<item itemtype="Node" CircId="Node-5" mainComp="false" Pos="-140,-48" />
+
+<item itemtype="Node" CircId="Node-13" mainComp="false" Pos="-44,-80" />
+
+<item itemtype="Node" CircId="Node-14" mainComp="false" Pos="-140,12" />
+
+<item itemtype="Connector" uid="Connector-5" startpinid="Resistor-3-lPin" endpinid="Node-5-0" pointList="-128,-48,-140,-48" />
+
+<item itemtype="Connector" uid="Connector-6" startpinid="Node-5-2" endpinid="Resistor-4-lPin" pointList="-140,-48,-140,-28" />
+
+<item itemtype="Connector" uid="Connector-21" startpinid="Oscope-12-Pin0" endpinid="Node-13-1" pointList="8,-84,-44,-84,-44,-80" />
+
+<item itemtype="Connector" uid="Connector-22" startpinid="Resistor-3-rPin" endpinid="Node-13-0" pointList="-96,-48,-44,-48,-44,-80" />
+
+<item itemtype="Connector" uid="Connector-23" startpinid="Node-13-2" endpinid="opAmp-1-output" pointList="-44,-80,-44,-84" />
+
+<item itemtype="Connector" uid="Connector-24" startpinid="Oscope-12-PinG" endpinid="Node-14-1" pointList="8,28,-116,28,-116,12,-140,12" />
+
+<item itemtype="Connector" uid="Connector-25" startpinid="Resistor-4-rPin" endpinid="Node-14-0" pointList="-140,4,-140,12" />
+
+<item itemtype="Connector" uid="Connector-26" startpinid="Node-14-2" endpinid="Ground-9-Gnd" pointList="-140,12,-140,24" />
+
+<item itemtype="Connector" uid="Connector-4" startpinid="opAmp-1-inputNinv" endpinid="Node-5-1" pointList="-92,-76,-140,-76,-140,-48" />
+
+<item itemtype="Connector" uid="Connector-30" startpinid="WaveGen-18-outnod" endpinid="opAmp-1-inputInv" pointList="-172,-92,-92,-92" />
+
+</circuit>
